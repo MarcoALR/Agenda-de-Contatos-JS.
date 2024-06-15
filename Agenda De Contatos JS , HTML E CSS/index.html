@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="CadastrosdeContato.css">
+    <title>Cidade</title>
+</head>
+
+<body>
+    <header class="cabecalho">Cadastro de Contato</header>
+
+    <aside class="cadastro">
+
+        <div class="formulario">
+
+            <section class="mun_est">
+
+                <div class="est_mun">
+
+                    <label for="">Nome</label>
+
+                    <input class="input_tamanho" type="text" id="nome" disabled>
+
+                </div>
+
+                <div class="est_mun">
+
+                    <label for="">Sobrenome</label>
+
+                    <input class="input_tamanho" type="text" id="sobrenome" disabled>
+                </div>
+
+            </section>
+
+            <section class="secao">
+
+                <label for="">Endereço</label>
+
+                <input class="input_tamanho2" type="text" id="endereco" disabled>
+
+            </section>
+
+            <section class="secao">
+
+                <label for="">Telefone</label>
+
+                <input class="input_tamanho" type="number" id="telefone" disabled>
+
+            </section>
+        </div>
+
+    </aside>
+
+    <main class="botoes">
+
+        <button id="incluir" class="bti" onclick="incluirContato()">Incluir</button>
+        <button id="editar" class="bte" onclick="editarContato()" disabled>Editar</button>
+        <button id="salvar" class="bts" onclick="salvarContato()" disabled>Salvar</button>
+        <button id="cancelar" class="btc" onclick="cancelar()" disabled>Cancelar</button>
+        <button id="excluir" class="btex" onclick="excluirContato()" disabled>Excluir</button>
+
+    </main>
+
+    <section id="navegacao">
+
+        <button id="primeiro" class="navegar" onclick="primeiroContato()">|<</button>
+        <button id="anterior" class="navegar" onclick="anteriorContato()"><</button>
+        <button id="proximo" class="navegar" onclick="proximoContato()">></button>
+        <button id="ultimo" class="navegar" onclick="ultimoContato()">>|</button>
+
+    </section>
+<div class="ajuste"></div>
+    <footer class="rodape"><h3>Agenda de Contato</h3></footer>
+
+    </main>
+    
+    <script src="cadastroctt.js"></script>
+    
+</body>
+
+</html>

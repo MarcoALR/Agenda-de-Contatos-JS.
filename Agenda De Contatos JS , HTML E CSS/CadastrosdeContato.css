@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "cabecalho cabecalho cabecalho"
+    "menulateral main main"
+    "navegar navegar navegar"
+    "ajuste ajuste ajuste"
+    "rodape rodape rodape";
+  grid-template-columns: 460px;
+}
+
+img {
+  height: 80vh;
+}
+
+.cadastro {
+  width: 454px;
+  height: 223px;
+  background-color: #d9d9d9;
+  margin: 9px;
+  display: grid;
+  grid-area: menulateral;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+label {
+  text-align: left;
+  color: #fff;
+}
+
+.input_tamanho {
+  width: 215px;
+  height: 46px;
+}
+
+.input_tamanho2 {
+  width: 439px;
+  height: 46px;
+}
+
+.navegar {
+  background-color: black;
+  color: white;
+  width: 85px;
+  height: 45px;
+  margin: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputm {
+  width: 200px;
+  height: 46px;
+}
+
+.ajuste {
+  display: grid;
+  grid-area: ajuste;
+  height: 60vh;
+}
+
+main {
+  display: grid;
+  grid-area: main;
+  padding: 1vh;
+}
+
+#estado {
+  width: 211px;
+  height: 45.27px;
+}
+
+.secao {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  grid-area: cabecalho;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  height: 40px;
+  width: 100%;
+  font-family: Inter;
+  background-color: #04c9f4;
+  color: #ffffff;
+}
+
+li {
+  margin: 1px;
+  padding: 0%;
+}
+
+.item1:hover {
+  color: #262727;
+}
+
+.item:hover {
+  color: #262727;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+footer {
+  color: #04c9f4;
+  text-align: center;
+  display: grid;
+  grid-area: rodape;
+  justify-content: center;
+  align-items: center;
+}
+
+.est_mun {
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+}
+
+.mun_est {
+  display: flex;
+}
+
+#municipio {
+  width: 211px;
+}
+
+.btex {
+  width: 95px;
+  height: 31px;
+  background-color: red;
+  color: white;
+  margin: 3px;
+}
+
+.bti {
+  width: 95px;
+  height: 31px;
+  background-color: green;
+  color: white;
+  margin: 3px;
+}
+
+.bts {
+  width: 95px;
+  height: 31px;
+  background-color: #04c9f4;
+  color: white;
+  margin: 3px;
+}
+
+.btc {
+  width: 95px;
+  height: 31px;
+  color: #04c9f4;
+  margin: 3px;
+}
+
+.bte {
+  width: 95px;
+  height: 31px;
+  background: rgba(253, 152, 0, 1);
+  color: white;
+  margin: 3px;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .cadastro,
+  .input_tamanho2 {
+    width: 100%;
+  }
+
+  .input_tamanho,
+  #estado,
+  #municipio {
+    width: calc(100% - 10px);
+  }
+
+  .navegar,
+  .btex,
+  .bti,
+  .bts,
+  .btc,
+  .bte {
+    width: calc(100% - 0px);
+    margin: 6px;
+  }
+
+  header,
+  footer {
+    height: auto;
+  }
+}
